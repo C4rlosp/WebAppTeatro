@@ -1,0 +1,23 @@
+﻿.description {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px;
+    z-index: 1;
+}
+
+.btn-hover:hover .description {
+    display: block;
+}
+
+.btn-hover:hover .card-img {
+    filter: blur(4px);
+}
+
+.btn-hover {
+    position: relative;
+    display: inline-block;
+}
