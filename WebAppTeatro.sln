@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppTeatro", "WebAppTeatro\WebAppTeatro.csproj", "{4AB520CB-8EF4-4B67-87CB-FE4135DF3FD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppTeatro.Client", "WebAppTeatro.Client\WebAppTeatro.Client.csproj", "{63C24F1D-D896-46F2-AB75-732336910246}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AB520CB-8EF4-4B67-87CB-FE4135DF3FD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB520CB-8EF4-4B67-87CB-FE4135DF3FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB520CB-8EF4-4B67-87CB-FE4135DF3FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB520CB-8EF4-4B67-87CB-FE4135DF3FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C24F1D-D896-46F2-AB75-732336910246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C24F1D-D896-46F2-AB75-732336910246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C24F1D-D896-46F2-AB75-732336910246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C24F1D-D896-46F2-AB75-732336910246}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75860917-EDFA-46FA-8FC6-4859C4C7DB58}
+	EndGlobalSection
+EndGlobal

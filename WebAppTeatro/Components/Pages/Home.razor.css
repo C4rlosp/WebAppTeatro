@@ -1,0 +1,15 @@
+﻿.carousel {
+    width: 100%; /* Ajusta el ancho del carrusel al 100% del body */
+    margin: 0; /* Elimina cualquier margen para un mejor ajuste */
+    
+}
+
+.carousel-inner {
+    height: auto; /* Ajusta la altura del contenedor interno automáticamente */
+}
+
+.carousel-item img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del carrusel */
+    height: auto; /* Ajusta la altura de la imagen automáticamente */
+    object-fit: cover; /* Ajusta la imagen para cubrir el carrusel sin distorsionarla */
+}
