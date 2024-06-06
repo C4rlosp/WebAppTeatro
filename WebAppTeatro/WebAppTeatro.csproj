@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Components\Pages\Cartelera.razor.css" />
     <None Remove="Components\Pages\Home.razor.css" />
   </ItemGroup>
 
