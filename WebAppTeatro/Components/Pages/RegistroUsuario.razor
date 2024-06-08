@@ -1,29 +1,96 @@
 ﻿@page "/RegistroUsuario"
+<html>
 
-<form class="mb-3">
-    <div class="row">
-        <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Name</label>
-            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-        </div>
-        <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">LastName</label>
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-        </div>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  LINK ICONOS  -->
+    <script src="https://kit.fontawesome.com/d3d5acf2bd.js" crossorigin="anonymous"></script>
+    <!--  LINK CSS   -->
+    <link rel="stylesheet" href="" />
+    <!--  LINK BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <!--  Formulario de registro   -->
+        <div class="Formulario"
+ <h2>Registrarse</h2>
+  <form action="#">
+    <!--  Nombre Completo   -->
+    <div class="input-box">
+      <span class="icono"><i class="fa-solid fa-user"></i></span>
+      <label for="#">Nombre Completo</label>
+      <input type="text" class="form-control" placeholder="Ingrese su nombre completo" required>
     </div>
-    <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4">
+    <!--  Cedula   -->
+    <div class="input-box">
+      <span class="icono"><i class="fa-solid fa-address-card"></i></span>
+      <label for="#">Cedula</label>
+      <input type="text" class="form-control" placeholder="Ingrese el numero de cedula" required>
     </div>
-    <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4">
+       <!--  Correo   -->
+    <div class="input-box">
+      <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+      <label for="#">Correo</label>
+      <input type="email" class="form-control" placeholder="Ingrese su correo" required>
+      <i class="uil uil-envelope-alt email"></i>
     </div>
-    <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign up</button>
+           <!--  Telefono   -->
+    <div class="input-box">
+      <span class="icono"><i class="fa-solid fa-phone"></i></span>
+      <label for="#">Telefono</label>
+      <input type="text" class="form-control" placeholder="Ingrese su telefono" required>
     </div>
-</form>
+          <!--  Contraseña   -->
+     <div class="input-box">
+      <span class="icono"><i class="fa-solid fa-lock"></i></span>
+      <label for="#">Confirmar contraseña</label>
+      <input type="password" class="form-control" id="Password" placeholder="Ingrese su contraseña" required>
+    </div>
+
+    <!--  Registrarse   -->
+    <div class="button">
+    <button type="submit" class="btn">Registrarse</button>
+    </div>
+
+    <!--  ¿Ya tienes una cuenta?   -->
+    <div class="login_singnup">¿Ya tienes una cuenta?<a href="/Login" target="_blank" id="login">Login</a></div>
+
+    <!--  Terminos y condiciones   -->
+    <div class="recordar">
+        <label for="#"><input required type="checkbox"/>Aceptar los terminos y condciones </label>
+    </div>
+
+  </form>
+
+</div>
+        <!--  LINK BOOTSTRAP JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </section>
+</body>
+</html>
 
 @code {
 
 }
+<style>
+
+    .Formulario .button {
+        position: relative;
+        border: none;
+        outline: none;
+        background: #0006;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.25em;
+        transition: 0.4s;
+    }
+
+        .Formulario .button:hover {
+            background:purple;
+        }
+
+</style>
