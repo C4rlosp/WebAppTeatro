@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppTeatro", "WebAppTeatr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppTeatro.Client", "WebAppTeatro.Client\WebAppTeatro.Client.csproj", "{63C24F1D-D896-46F2-AB75-732336910246}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppTeatro.Shared", "WebAppTeatro.Shared\WebAppTeatro.Shared.csproj", "{0DF9A2FF-18A0-4B91-9C47-FFAA6EF27EDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{63C24F1D-D896-46F2-AB75-732336910246}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63C24F1D-D896-46F2-AB75-732336910246}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63C24F1D-D896-46F2-AB75-732336910246}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF9A2FF-18A0-4B91-9C47-FFAA6EF27EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF9A2FF-18A0-4B91-9C47-FFAA6EF27EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF9A2FF-18A0-4B91-9C47-FFAA6EF27EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF9A2FF-18A0-4B91-9C47-FFAA6EF27EDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
