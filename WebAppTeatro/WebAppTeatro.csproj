@@ -7,15 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Components\Pages\Cartelera.razor.css" />
-    <None Remove="Components\Pages\Home.razor.css" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Components\Pages\Home.razor.css" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\WebAppTeatro.Client\WebAppTeatro.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.6" />
