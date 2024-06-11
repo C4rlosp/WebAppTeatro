@@ -1,5 +1,8 @@
 ﻿@page "/"
 
+@*Inyectamos el HttpClient*@
+@inject HttpClient Http
+
 <PageTitle>Home</PageTitle>
 
 <div style="margin-bottom: 20px; position:-ms-page;">
@@ -12,4 +15,29 @@
 
 
 
+
+
+
+
+
+
+
+
+@*Validacion de conexion al servidor llamando al controlador UsuariosController*@
+<br /> Estado de la conexion actual <br />
+<p>Conectando con el servidor local del proyecto....</p>
+
+@code{
+    string conexionServidor = "En espera...";
+
+    async Task TestConection()
+    {
+        var respuesta = await Http.GetStringAsync("https://localhost:7264/api/Usuario/strConection");
+        conexionServidor = respuesta;
+    }
+
+    protected override async Task OnInitializedAsync(){
+        await TestConection();
+    }
+}
 
