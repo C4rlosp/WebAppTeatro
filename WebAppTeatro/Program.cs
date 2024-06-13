@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using WebAppTeatro.Client.Pages;
 using WebAppTeatro.Components;
+using WebAppTeatro.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +31,10 @@ app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseAntiforgery();
+app.MapControllers();
+
+//agregamos el mapeo de los controladores
+app.MapControllers();
 
 app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
