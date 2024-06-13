@@ -12,6 +12,11 @@ builder.Services.AddRazorComponents()
 //se agregan los seervicios
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
+builder.Services.AddDbContext<ApplicationDBContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("strConnection"));
+}
+);
 
 var app = builder.Build();
 
