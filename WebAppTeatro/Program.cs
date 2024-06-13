@@ -1,15 +1,13 @@
+using Microsoft.EntityFrameworkCore;
 using WebAppTeatro.Client.Pages;
 using WebAppTeatro.Components;
+using WebAppTeatro.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
-
-//Agregamos los servicios
-builder.Services.AddControllers();
-builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
