@@ -7,4 +7,5 @@ using System.Threading.Tasks;
 namespace WebAppTeatro.Shared
 {
     public class Usuarios
-    {
+    { }
+}
