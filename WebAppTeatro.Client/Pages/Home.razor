@@ -1,5 +1,4 @@
 ﻿@page "/"
-@inject HttpClient Http
 
 <PageTitle>Home</PageTitle>
 
@@ -17,7 +16,7 @@ Estado de la conexion local
 <p>conectado a la base de datos de la tabla usuarios</p>
 <p>conectando con la base de datos....</p>
 
-@code
+@* @code
 {
     string conexionServidor = "en espera";
 
@@ -31,5 +30,5 @@ Estado de la conexion local
         await Probarconexion();
     }
 
-}
+} *@
 
