@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
 
-//se agregan los seervicios
+
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 builder.Services.AddDbContext<ApplicationDBContext>(options =>
