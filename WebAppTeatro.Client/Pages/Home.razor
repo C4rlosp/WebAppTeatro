@@ -1,6 +1,5 @@
 ﻿@page "/"
 
-@*Inyectamos el HttpClient*@
 @inject HttpClient Http
 
 <PageTitle>Home</PageTitle>
@@ -11,36 +10,6 @@
 <div>
     <Cartelera></Cartelera>
 </div>
-
-<br />
-Estado de la conexion local
-<br />
-<p>Conectando al servidor....</p>
-<p>conectado a la base de datos de la tabla usuarios</p>
-<p>conectando con la base de datos....</p>
-
-@* @code
-{
-    string conexionServidor = "en espera";
-
-    async Task Probarconecion()
-    {
-        var respuesta = await Http.GetStringAsync("api/Usuarios/ConexionServidor");
-    }
-
-    protected overrida asyn Task OneInitializedAsync()
-    {
-        await Probarconexion();
-    }
-
-} *@
-
-
-
-
-
-
-
 
 @*Validacion de conexion al servidor llamando al controlador UsuariosController*@
 <br /> Estado de la conexion actual <br />

@@ -27,6 +27,7 @@ app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseAntiforgery();
+app.MapControllers();
 
 //agregamos el mapeo de los controladores
 app.MapControllers();
