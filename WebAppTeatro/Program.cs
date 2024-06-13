@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
 
+
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 builder.Services.AddDbContext<ApplicationDBContext>(options =>
@@ -16,6 +17,7 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("strConnection"));
 }
 );
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -34,6 +36,7 @@ app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseAntiforgery();
+app.MapControllers();
 
 //agregamos el mapeo de los controladores
 app.MapControllers();
