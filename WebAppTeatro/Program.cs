@@ -1,11 +1,24 @@
+using Microsoft.EntityFrameworkCore;
 using WebAppTeatro.Client.Pages;
 using WebAppTeatro.Components;
+using WebAppTeatro.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
+
+//se agregan para manejar los controllers y las peticiones Http
+builder.Services.AddControllers();
+builder.Services.AddHttpClient();
+
+//agregamos la cadena de conexion que vamos a utilizar
+builder.Services.AddDbContext<ApplicationDBContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("strConnection"));
+}
+);
 
 var app = builder.Build();
 
