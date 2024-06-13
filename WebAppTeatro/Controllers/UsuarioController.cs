@@ -8,7 +8,7 @@ namespace WebAppTeatro.Controllers
     public class UsuarioController : ControllerBase
     {
 
-        /*Validamos la conexion al Servidor*/
+        /*Validamos la conexion al Servidor local de la App*/
         [HttpGet("strConection")]
 
         public async Task<ActionResult<string>> GetEjemplo() 
