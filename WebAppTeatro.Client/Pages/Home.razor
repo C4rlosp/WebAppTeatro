@@ -12,47 +12,22 @@
     <Cartelera></Cartelera>
 </div>
 
-<br />
-Estado de la conexion local
-<br />
-<p>Conectando al servidor....</p>
-<p>conectado a la base de datos de la tabla usuarios</p>
-<p>conectando con la base de datos....</p>
-
-@* @code
-{
-    string conexionServidor = "en espera";
-
-    async Task Probarconecion()
-    {
-        var respuesta = await Http.GetStringAsync("api/Usuarios/ConexionServidor");
-    }
-
-    protected overrida asyn Task OneInitializedAsync()
-    {
-        await Probarconexion();
-    }
-
-} *@
-
-
-
-
-
-
-
-
 @*Validacion de conexion al servidor llamando al controlador UsuariosController*@
 <br /> Estado de la conexion actual <br />
-<p>Conectando con el servidor local del proyecto....</p>
+<p>@ConexionServidor</p>
+<p>@ConexionUsuarios</p>
 
 @code{
-    string conexionServidor = "En espera...";
+    string ConexionServidor = "En espera...";
+    string ConexionUsuarios = "En espera...";
 
     async Task TestConection()
     {
-        var respuesta = await Http.GetStringAsync("https://localhost:7264/api/Usuario/strConection");
-        conexionServidor = respuesta;
+        var respuesta = await Http.GetStringAsync("https://localhost:7264/api/Usuario/ConexionServidor");
+        var respuestaUser = await Http.GetStringAsync("https://localhost:7264/api/Usuario/ConexionUsuarios");
+        ConexionServidor = respuesta;
+        ConexionUsuarios = respuestaUser;
+
     }
 
     protected override async Task OnInitializedAsync(){
