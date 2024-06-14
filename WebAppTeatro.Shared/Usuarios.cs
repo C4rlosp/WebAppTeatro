@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebAppTeatro.Shared
 {
     public class Usuarios
     {
+        [Key]
         public int IdUsuario { get; set; }
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
