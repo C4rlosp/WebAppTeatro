@@ -12,6 +12,8 @@ namespace WebAppTeatro.Data
 
         //agregamos las clases con las que relacionamos nuestra DB
         public DbSet<Usuarios> Usuarios { get; set; }
+
+        public DbSet<FuncionesTeatrales> FuncionesTeatrales { get; set; }
     }
 
 }
