@@ -9,7 +9,6 @@ namespace WebAppTeatro.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-
         //se utiliza el context para enviar datos a la DB
         private readonly ApplicationDBContext _dbContext;
 
@@ -20,6 +19,7 @@ namespace WebAppTeatro.Controllers
 
         /*Validamos la conexion al Servidor*/
         [HttpGet("ConexionServidor")]
+
 
         public async Task<ActionResult<string>> GetConexionServidor()
         {

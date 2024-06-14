@@ -19,3 +19,4 @@ namespace WebAppTeatro.Shared
         public string Password { get; set; }
     }
 }
+
